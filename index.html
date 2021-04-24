@@ -7,6 +7,43 @@
     <title>Tuto</title>
 </head>
 <body>
-    <h1>Repos pour aide etudiant OCR</h1>
+    <header>
+        <h1>Guide pour utilisé GitHub et Pages</h1>
+        <p>à l'attention des étudiant OCR</p>
+    </header>
+    <main>
+        <h2>Pour bien demmarer</h2>
+        <h3>-1- Créer votre premier repository</h3>
+        <ol>
+            <li>Rendez-vous sur l'onglet "Répositories"</li>
+            <li>Cliquez sur "New"</li>
+            <li>Choisissez un nom adapté à votre projet</li>
+            <li>Validez</li>
+        </ol>
+        <h3>-2- Transformez votre repo en gh-pages</h3>
+        <ol>
+            <li>Rendez-vous sur votre repo puis dans "Settings"</li>
+            <li>Ajoutez ".github.io" au nom du repo et clickez sur "Rename"</li>
+            <li>Clicker sur l'onglet "Pages" et dans le cadre vert vous retrouvez le lien de votre site web. En cliquant dessous verfiier que votre site fonctionne (page blanche si le repo est vide)</li>
+        </ol>
+        <h3>-3- Récuperer voter depot pour travailler en local</h3>
+        <ol>
+            <li>Ouvrez-votre editeur</li>
+            <li>Ouvrez un terminal</li>
+            <li>utilisé la commande "git init"</li>
+            <li>puis git clone "lien du depot"</li>
+        </ol>
+        <h2>Envoyez son travail sur GitHub</h2>
+        <h3>Premier commit</h3>
+        <ol>
+            <li>Creez votre fichier index.html</li>
+            <li>Utilisez la commande "git add nom_du_fichier"</li>
+            <li>Créer le commit associer avec "git commit -m "action réaliser"</li>
+            <li>Rendez-vous sur la branch principal (ou la branche souhaitez) avec "git branch -M nom_de_la_branch"</li>
+            <li>puis "git remote add origin https://github.com/username/nom_du_depot.git"</li>
+            <li>puis "git push -u origin nom_de_la_branch"</li>
+            <li>Si tous c'est bien passé le fichier index.html est sur votre depot</li>
+        </ol>
+    </main>
 </body>
 </html>
