@@ -1,0 +1,28 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(to right bottom, #fffde7, #fbf2cc, #fbe7b2, #fcda98, #ffcc80);;
+}
+header{
+    text-align: center;
+    padding: 2em;
+}
+h1{
+    font-size: 2em;
+}
+h2,h3{
+    padding: 1em 0;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.2em;
+}
+.tips{
+    margin: 2em 0;
+}
+ol,ul{
+    margin-left: 2em;
+}
