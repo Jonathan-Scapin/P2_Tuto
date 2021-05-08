@@ -12,5 +12,3 @@ Rapel pour formater votre code
 * Sous Windows Shift+ Alt+F
 * Sur Mac Shift+ Option+F
 * Sur Linux Ctrl+ Shift+I
-
-Modification pour exemple
