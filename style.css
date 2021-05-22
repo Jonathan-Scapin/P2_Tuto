@@ -1,31 +1,56 @@
-body{
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
-    background-image: linear-gradient(to right bottom, #fffde7, #fbf2cc, #fbe7b2, #fcda98, #ffcc80);;
+html {
+    height: 100%;
 }
-header{
+
+html {
+    background-image: url("img/background/paralax_background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
     text-align: center;
     padding: 2em;
 }
-h1{
+
+h1 {
     font-size: 2em;
+    font-weight: bold;
+    color: whitesmoke;
 }
-h2,h3{
+
+h2,
+h3 {
     padding: 1em 0;
 }
-h2{
+
+h2 {
     font-size: 1.5em;
 }
-h3{
+
+h3 {
     font-size: 1.2em;
 }
-.tips{
+
+.tips {
     margin: 2em 0;
 }
-ol,ul{
+
+ol,
+ul {
     margin-left: 2em;
 }
+
 /*bloc code*/
 .codebox {
     background-color: #0d0f0d;
@@ -34,8 +59,10 @@ ol,ul{
     margin: 1em 0 1.2em 0;
     word-wrap: normal;
 }
+
 .codebox p {
-    color: #dfefba;;
+    color: #dfefba;
+    ;
     text-transform: uppercase;
     border-bottom: 1px solid #C9D2D8;
     margin-bottom: 0;
@@ -44,6 +71,7 @@ ol,ul{
     font-weight: bold;
     display: block;
 }
+
 .codebox code {
     color: #dab597;
     overflow: auto;
@@ -51,6 +79,27 @@ ol,ul{
     height: auto;
     max-height: 200px;
     padding: 5px 3px;
-    font: 0.9em Monaco, "Andale Mono","Courier New", Courier, monospace;
+    font: 0.9em Monaco, "Andale Mono", "Courier New", Courier, monospace;
     line-height: 1.3em;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        max-width: 600px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    body {
+        max-width: 800px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 1000px;
+    }
 }
