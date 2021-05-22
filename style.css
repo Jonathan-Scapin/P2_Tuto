@@ -26,3 +26,31 @@ h3{
 ol,ul{
     margin-left: 2em;
 }
+/*bloc code*/
+.codebox {
+    background-color: #0d0f0d;
+    border: 1px solid #C9D2D8;
+    font-size: 1em;
+    margin: 1em 0 1.2em 0;
+    word-wrap: normal;
+}
+.codebox p {
+    color: #dfefba;;
+    text-transform: uppercase;
+    border-bottom: 1px solid #C9D2D8;
+    margin-bottom: 0;
+    padding: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+    display: block;
+}
+.codebox code {
+    color: #dab597;
+    overflow: auto;
+    display: block;
+    height: auto;
+    max-height: 200px;
+    padding: 5px 3px;
+    font: 0.9em Monaco, "Andale Mono","Courier New", Courier, monospace;
+    line-height: 1.3em;
+}

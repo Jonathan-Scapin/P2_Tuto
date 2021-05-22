@@ -20,26 +20,40 @@
     <main>
         <div id="begin" class="tips">
             <h2>Pour bien demmarer</h2>
-            <h3>-1- Créer votre premier repository</h3>
+            <h3>Créer votre premier repository</h3>
             <ol>
                 <li>Rendez-vous sur l'onglet "Répositories"</li>
                 <li>Cliquez sur "New"</li>
                 <li>Choisissez un nom adapté à votre projet</li>
                 <li>Validez</li>
             </ol>
-            <h3>-2- Transformez votre repo en gh-pages</h3>
+            <h3>Transformez votre repo en gh-pages</h3>
             <ol>
                 <li>Rendez-vous sur votre repo puis dans "Settings"</li>
                 <li>Ajoutez ".github.io" au nom du repo et clickez sur "Rename"</li>
                 <li>Clicker sur l'onglet "Pages" et dans le cadre vert vous retrouvez le lien de votre site web. En
                     cliquant dessous verfiier que votre site fonctionne (page blanche si le repo est vide)</li>
             </ol>
-            <h3>-3- Récuperer voter depot pour travailler en local</h3>
+            <h3>Récuperer voter depot pour travailler en local</h3>
             <ol>
                 <li>Ouvrez-votre editeur</li>
                 <li>Ouvrez un terminal</li>
-                <li>utilisé la commande "git init"</li>
-                <li>puis git clone "lien du depot"</li>
+                <li>utilisé la commande
+                    <div class="codebox">
+                        <p>code :</p>
+                        <pre>
+                            <code>git init</code>
+                        </pre>
+                    </div>
+                </li>
+                <li>puis
+                    <div class="codebox">
+                        <p>code :</p>
+                        <pre>
+                            <code>git clone "url du depot"</code>
+                        </pre>
+                    </div>
+                </li>
             </ol>
         </div>
         <div id="firstCommit" class="tips">
@@ -47,12 +61,46 @@
             <h3>Premier commit</h3>
             <ol>
                 <li>Creez votre fichier index.html</li>
-                <li>Utilisez la commande "git add nom_du_fichier"</li>
-                <li>Créer le commit associer avec "git commit -m "action réaliser"</li>
-                <li>Rendez-vous sur la branch principal (ou la branche souhaitez) avec "git branch -M nom_de_la_branch"
+                <li>Utilisez la commande 
+                    <div class="codebox">
+                        <p>code :</p>
+                        <pre>
+                            <code>git add nom_du_fichier</code>
+                        </pre>
+                    </div>
                 </li>
-                <li>puis "git remote add origin https://github.com/username/nom_du_depot.git"</li>
-                <li>puis "git push -u origin nom_de_la_branch"</li>
+                <li>Créer le commit associer avec 
+                    <div class="codebox">
+                        <p>code :</p>
+                        <pre>
+                            <code>git commit -m "action réaliser"</code>
+                        </pre>
+                    </div>
+                </li>
+                <li>Rendez-vous sur la branch principal (ou la branche souhaitez) avec 
+                    <div class="codebox">
+                        <p>code :</p>
+                        <pre>
+                            <code>git branch -M nom_de_la_branch</code>
+                        </pre>
+                    </div>
+                </li>
+                <li>puis 
+                    <div class="codebox">
+                        <p>code :</p>
+                        <pre>
+                            <code>git remote add origin https://github.com/username/nom_du_depot.git</code>
+                        </pre>
+                    </div>
+                    </li>
+                <li>puis 
+                    <div class="codebox">
+                        <p>code :</p>
+                        <pre>
+                            <code>git push -u origin nom_de_la_branch</code>
+                        </pre>
+                    </div>
+                    </li>
                 <li>Si tous c'est bien passé le fichier index.html est sur votre depot</li>
             </ol>
         </div>
@@ -64,7 +112,14 @@
                 <li>Sur Linux Ctrl+ Shift+I</li>
             </ul>
         </div>
+        <section id="url">
+            <h3>Retrouvez ici une selection de lien qui vous aidera dans votre formation</h3>
+            <a href="https://jaetheme.com/balises-html5/#code">Retrouvez ici l'enssemble des balises HTML à votre disposition</a>
+        </section>
     </main>
+    <footer>
+        <p>@2021 JS-WEB</p>
+    </footer>
 </body>
 
 </html>
