@@ -50,9 +50,20 @@ ol,
 ul {
     margin-left: 2em;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+main > div{
+    padding: 0 1em;
+}
+details summary {
+    cursor: pointer;
+}
 
 /*bloc code*/
 .codebox {
+    max-width: 450px;
     background-color: #0d0f0d;
     border: 1px solid #C9D2D8;
     font-size: 1em;
@@ -83,6 +94,14 @@ ul {
     line-height: 1.3em;
 }
 
+#url ul{
+    list-style: circle;
+}
+
+footer{
+    padding: 0 1em;
+    padding-top: 3em;
+}
 
 @media (min-width: 768px) {
     body {

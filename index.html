@@ -20,106 +20,139 @@
     </header>
     <main>
         <div id="begin" class="tips">
-            <h2>Pour bien demmarer</h2>
-            <h3>Créer votre premier repository</h3>
-            <ol>
-                <li>Rendez-vous sur l'onglet "Répositories"</li>
-                <li>Cliquez sur "New"</li>
-                <li>Choisissez un nom adapté à votre projet</li>
-                <li>Validez</li>
-            </ol>
-            <h3>Transformez votre repo en gh-pages</h3>
-            <ol>
-                <li>Rendez-vous sur votre repo puis dans "Settings"</li>
-                <li>Ajoutez ".github.io" au nom du repo et clickez sur "Rename"</li>
-                <li>Clicker sur l'onglet "Pages" et dans le cadre vert vous retrouvez le lien de votre site web. En
-                    cliquant dessous verfiier que votre site fonctionne (page blanche si le repo est vide)</li>
-            </ol>
-            <h3>Récuperer voter depot pour travailler en local</h3>
-            <ol>
-                <li>Ouvrez-votre editeur</li>
-                <li>Ouvrez un terminal</li>
-                <li>utilisé la commande
-                    <div class="codebox">
-                        <p>code :</p>
-                        <pre>
-                            <code>git init</code>
-                        </pre>
-                    </div>
-                </li>
-                <li>puis
-                    <div class="codebox">
-                        <p>code :</p>
-                        <pre>
-                            <code>git clone "url du depot"</code>
-                        </pre>
-                    </div>
-                </li>
-            </ol>
+            <h2>Démmarer un projet GitHub</h2>
+            <details>
+                <summary>Créer votre premier repository</summary>
+                <ol>
+                    <li>Rendez-vous sur l'onglet "Répositories"</li>
+                    <li>Cliquez sur "New"</li>
+                    <li>Choisissez un nom adapté à votre projet</li>
+                    <li>Validez</li>
+                </ol>
+            </details>
+            <details>
+                <summary>Transformez votre repo en gh-pages</summary>
+                <ol>
+                    <li>Rendez-vous sur votre repo puis dans "Settings"</li>
+                    <li>Ajoutez ".github.io" au nom du repo et clickez sur "Rename"</li>
+                    <li>Clicker sur l'onglet "Pages" et dans le cadre vert vous retrouvez le lien de votre site web. En
+                        cliquant dessous verfiier que votre site fonctionne (page blanche si le repo est vide)</li>
+                </ol>
+            </details>
+            <details>
+                <summary>Récuperer voter depot pour travailler en local</summary>
+                <ol>
+                    <li>Ouvrez-votre editeur</li>
+                    <li>Ouvrez un terminal</li>
+                    <li>utilisé la commande
+                        <div class="codebox">
+                            <p>code :</p>
+                            <pre>
+                                <code>git init</code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>puis
+                        <div class="codebox">
+                            <p>code :</p>
+                            <pre>
+                                <code>git clone "url du depot"</code>
+                            </pre>
+                        </div>
+                    </li>
+                </ol>
+            </details>
         </div>
         <div id="firstCommit" class="tips">
             <h2>Envoyez son travail sur GitHub</h2>
-            <h3>Premier commit</h3>
-            <ol>
-                <li>Creez votre fichier index.html</li>
-                <li>Utilisez la commande 
-                    <div class="codebox">
-                        <p>code :</p>
-                        <pre>
-                            <code>git add nom_du_fichier</code>
-                        </pre>
-                    </div>
-                </li>
-                <li>Créer le commit associer avec 
-                    <div class="codebox">
-                        <p>code :</p>
-                        <pre>
-                            <code>git commit -m "action réaliser"</code>
-                        </pre>
-                    </div>
-                </li>
-                <li>Rendez-vous sur la branch principal (ou la branche souhaitez) avec 
-                    <div class="codebox">
-                        <p>code :</p>
-                        <pre>
-                            <code>git branch -M nom_de_la_branch</code>
-                        </pre>
-                    </div>
-                </li>
-                <li>puis 
-                    <div class="codebox">
-                        <p>code :</p>
-                        <pre>
-                            <code>git remote add origin https://github.com/username/nom_du_depot.git</code>
-                        </pre>
-                    </div>
+            <details>
+                <summary>Premier commit</summary>
+                <ol>
+                    <li>Creez votre fichier index.html</li>
+                    <li>Utilisez la commande
+                        <div class="codebox">
+                            <p>code :</p>
+                            <pre>
+                                    <code>git add nom_du_fichier</code>
+                                </pre>
+                        </div>
                     </li>
-                <li>puis 
-                    <div class="codebox">
-                        <p>code :</p>
-                        <pre>
-                            <code>git push -u origin nom_de_la_branch</code>
-                        </pre>
-                    </div>
+                    <li>Créer le commit associer avec
+                        <div class="codebox">
+                            <p>code :</p>
+                            <pre>
+                                    <code>git commit -m "action réaliser"</code>
+                                </pre>
+                        </div>
                     </li>
-                <li>Si tous c'est bien passé le fichier index.html est sur votre depot</li>
-            </ol>
+                    <li>Rendez-vous sur la branch principal (ou la branche souhaitez) avec
+                        <div class="codebox">
+                            <p>code :</p>
+                            <pre>
+                                    <code>git branch -M nom_de_la_branch</code>
+                                </pre>
+                        </div>
+                    </li>
+                    <li>puis
+                        <div class="codebox">
+                            <p>code :</p>
+                            <pre>
+                                    <code>git remote add origin https://github.com/username/nom_du_depot.git</code>
+                                </pre>
+                        </div>
+                    </li>
+                    <li>puis
+                        <div class="codebox">
+                            <p>code :</p>
+                            <pre>
+                                    <code>git push -u origin nom_de_la_branch</code>
+                                </pre>
+                        </div>
+                    </li>
+                    <li>Si tous c'est bien passé le fichier index.html est sur votre depot</li>
+                </ol>
+            </details>
         </div>
-        <div id="codeFormat">
-            <h2>Pensez à bien formater votre code</h2>
+        <div id="randomTips">
+            <h2>Astuces en Vracs</h2>
+            <details>
+                <summary>Raccourci formatage code VS Code</summary>
+                <p>Afin de garder un code lisible pensez à bien l'organiser. Vous pouvez vous aidez des raccourcis
+                    clavier pour formater rapidement votre code.</p>
+                <ul>
+                    <li>Sous Windows Shift+ Alt+F</li>
+                    <li>Sur Mac Shift+ Option+F</li>
+                    <li>Sur Linux Ctrl+ Shift+I</li>
+                </ul>
+            </details>
+        </div>
+        <div id="url">
+            <h3>Retrouvez ici une selection de lien qui vous aidera dans votre formation</h3>
             <ul>
-                <li>Sous Windows Shift+ Alt+F</li>
-                <li>Sur Mac Shift+ Option+F</li>
-                <li>Sur Linux Ctrl+ Shift+I</li>
+                <li>
+                    <a href="https://jaetheme.com/balises-html5/#code" target="_blank"
+                        rel="noopener noreferrer">Retrouvez ici
+                        l'enssemble des balises HTML à votre
+                        disposition</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"
+                        rel="noopener noreferrer">Besoin de resource pour la CSS Flexbox, c'est par ici que cela ce
+                        passe.</a>
+                </li>
+                <li>
+                    <a href="https://flexboxfroggy.com/#fr" target="_blank"
+                        rel="noopener noreferrer">Apprenez Flexbox de maniere ludique avec ce mini jeu.</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank"
+                        rel="noopener noreferrer">Retour sur les média querry, pour ne plus avoir de probleme de responsive.</a>
+                </li>
             </ul>
         </div>
-        <section id="url">
-            <h3>Retrouvez ici une selection de lien qui vous aidera dans votre formation</h3>
-            <a href="https://jaetheme.com/balises-html5/#code">Retrouvez ici l'enssemble des balises HTML à votre disposition</a>
-        </section>
     </main>
     <footer>
-        <p>@2021 JS-WEB</p>
+        <p>@2021 <a href="https://js-web.fr" target="_blank" rel="noopener noreferrer">JS-WEB</a></p>
     </footer>
 </body>
 
