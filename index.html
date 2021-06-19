@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="minireset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/minireset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tuto</title>
 </head>
 
@@ -19,137 +19,163 @@
         <p>retrouvez de nombreux astuces, Git, Programming, etc.</p>
     </header>
     <main>
-        <div id="begin" class="tips">
-            <h2>Démmarer un projet GitHub</h2>
-            <details>
-                <summary>Créer votre premier repository</summary>
-                <ol>
-                    <li>Rendez-vous sur l'onglet "Répositories"</li>
-                    <li>Cliquez sur "New"</li>
-                    <li>Choisissez un nom adapté à votre projet</li>
-                    <li>Validez</li>
-                </ol>
-            </details>
-            <details>
-                <summary>Transformez votre repo en gh-pages</summary>
-                <ol>
-                    <li>Rendez-vous sur votre repo puis dans "Settings"</li>
-                    <li>Ajoutez ".github.io" au nom du repo et clickez sur "Rename"</li>
-                    <li>Clicker sur l'onglet "Pages" et dans le cadre vert vous retrouvez le lien de votre site web. En
-                        cliquant dessous verfiier que votre site fonctionne (page blanche si le repo est vide)</li>
-                </ol>
-            </details>
-            <details>
-                <summary>Récuperer voter depot pour travailler en local</summary>
-                <ol>
-                    <li>Ouvrez-votre editeur</li>
-                    <li>Ouvrez un terminal</li>
-                    <li>utilisé la commande
-                        <div class="codebox">
-                            <p>code :</p>
-                            <pre>
-                                <code>git init</code>
-                            </pre>
-                        </div>
-                    </li>
-                    <li>puis
-                        <div class="codebox">
-                            <p>code :</p>
-                            <pre>
-                                <code>git clone "url du depot"</code>
-                            </pre>
-                        </div>
-                    </li>
-                </ol>
-            </details>
+        <div id="menuIcon">
+            <img id="code" class="tablink" onclick="openPage('visualStudio')" src="img/icon/visual_studio.svg" alt="" srcset="">
+            <img id="git" class="tablink" onclick="openPage('gitHub')" src="img/icon/github.svg" alt="" srcset="">
+            <img id="os" class="tablink" onclick="openPage('operatingSystem')" src="img/icon/pc.svg" alt="" srcset="">
+            <img id="class" class="tablink" onclick="openPage('classRooms')" src="img/icon/classroom.svg" alt="" srcset="">
         </div>
-        <div id="firstCommit" class="tips">
-            <h2>Envoyez son travail sur GitHub</h2>
-            <details>
-                <summary>Premier commit</summary>
-                <ol>
-                    <li>Creez votre fichier index.html</li>
-                    <li>Utilisez la commande
-                        <div class="codebox">
-                            <p>code :</p>
-                            <pre>
-                                    <code>git add nom_du_fichier</code>
+        <section id="gitHub" class="tabcontent">
+            <div id="begin" class="tips">
+                <h2>Démmarer un projet GitHub</h2>
+                <details>
+                    <summary>Créer votre premier repository</summary>
+                    <ol>
+                        <li>Rendez-vous sur l'onglet "Répositories"</li>
+                        <li>Cliquez sur "New"</li>
+                        <li>Choisissez un nom adapté à votre projet</li>
+                        <li>Validez</li>
+                    </ol>
+                </details>
+                <details>
+                    <summary>Transformez votre repo en gh-pages</summary>
+                    <ol>
+                        <li>Rendez-vous sur votre repo puis dans "Settings"</li>
+                        <li>Ajoutez ".github.io" au nom du repo et clickez sur "Rename"</li>
+                        <li>Clicker sur l'onglet "Pages" et dans le cadre vert vous retrouvez le lien de votre site web. En
+                            cliquant dessous verfiier que votre site fonctionne (page blanche si le repo est vide)</li>
+                    </ol>
+                </details>
+                <details>
+                    <summary>Récuperer voter depot pour travailler en local</summary>
+                    <ol>
+                        <li>Ouvrez-votre editeur</li>
+                        <li>Ouvrez un terminal</li>
+                        <li>utilisé la commande
+                            <div class="codebox">
+                                <p>code :</p>
+                                <pre>
+                                    <code>git init</code>
                                 </pre>
-                        </div>
-                    </li>
-                    <li>Créer le commit associer avec
-                        <div class="codebox">
-                            <p>code :</p>
-                            <pre>
-                                    <code>git commit -m "action réaliser"</code>
+                            </div>
+                        </li>
+                        <li>puis
+                            <div class="codebox">
+                                <p>code :</p>
+                                <pre>
+                                    <code>git clone "url du depot"</code>
                                 </pre>
-                        </div>
-                    </li>
-                    <li>Rendez-vous sur la branch principal (ou la branche souhaitez) avec
-                        <div class="codebox">
-                            <p>code :</p>
-                            <pre>
-                                    <code>git branch -M nom_de_la_branch</code>
-                                </pre>
-                        </div>
-                    </li>
-                    <li>puis
-                        <div class="codebox">
-                            <p>code :</p>
-                            <pre>
-                                    <code>git remote add origin https://github.com/username/nom_du_depot.git</code>
-                                </pre>
-                        </div>
-                    </li>
-                    <li>puis
-                        <div class="codebox">
-                            <p>code :</p>
-                            <pre>
-                                    <code>git push -u origin nom_de_la_branch</code>
-                                </pre>
-                        </div>
-                    </li>
-                    <li>Si tous c'est bien passé le fichier index.html est sur votre depot</li>
-                </ol>
-            </details>
-        </div>
-        <div id="randomTips">
-            <h2>Astuces en Vracs</h2>
-            <details>
-                <summary>Raccourci formatage code VS Code</summary>
-                <p>Afin de garder un code lisible pensez à bien l'organiser. Vous pouvez vous aidez des raccourcis
-                    clavier pour formater rapidement votre code.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </details>
+            </div> 
+            <div id="firstCommit" class="tips">
+                <h2>Envoyez son travail sur GitHub</h2>
+                <details>
+                    <summary>Premier commit</summary>
+                    <ol>
+                        <li>Creez votre fichier index.html</li>
+                        <li>Utilisez la commande
+                            <div class="codebox">
+                                <p>code :</p>
+                                <pre>
+                                        <code>git add nom_du_fichier</code>
+                                    </pre>
+                            </div>
+                        </li>
+                        <li>Créer le commit associer avec
+                            <div class="codebox">
+                                <p>code :</p>
+                                <pre>
+                                        <code>git commit -m "action réaliser"</code>
+                                    </pre>
+                            </div>
+                        </li>
+                        <li>Rendez-vous sur la branch principal (ou la branche souhaitez) avec
+                            <div class="codebox">
+                                <p>code :</p>
+                                <pre>
+                                        <code>git branch -M nom_de_la_branch</code>
+                                    </pre>
+                            </div>
+                        </li>
+                        <li>puis
+                            <div class="codebox">
+                                <p>code :</p>
+                                <pre>
+                                        <code>git remote add origin https://github.com/username/nom_du_depot.git</code>
+                                    </pre>
+                            </div>
+                        </li>
+                        <li>puis
+                            <div class="codebox">
+                                <p>code :</p>
+                                <pre>
+                                        <code>git push -u origin nom_de_la_branch</code>
+                                    </pre>
+                            </div>
+                        </li>
+                        <li>Si tous c'est bien passé le fichier index.html est sur votre depot</li>
+                    </ol>
+                </details>
+            </div>
+        </section>
+        <section id="visualStudio" class="tabcontent">
+            <div id="randomTips">
+                <h2>Astuces VS Code</h2>
+                <details>
+                    <summary>Raccourci formatage code VS Code</summary>
+                    <p>Afin de garder un code lisible pensez à bien l'organiser. Vous pouvez vous aidez des raccourcis
+                        clavier pour formater rapidement votre code.</p>
+                    <ul>
+                        <li>Sous Windows Shift+ Alt+F</li>
+                        <li>Sur Mac Shift+ Option+F</li>
+                        <li>Sur Linux Ctrl+ Shift+I</li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+        <section id="operatingSystem" class="tabcontent">
+            <div id="windows">
+                <h3>windows</h3>
+                <p>prochainement</p>
+            </div>
+            <div id="linux">
+                <h3>linux</h3>
+                <p>prochainement</p>
+            </div>
+            <div id="macOs">
+                <h3>macOs</h3>
+                <p>prochainement</p>
+            </div>
+        </section>
+        <secltion id="classRooms" class="tabcontent">
+            <div id="url">
+                <h3>Retrouvez ici une selection de lien qui vous aidera dans votre formation</h3>
                 <ul>
-                    <li>Sous Windows Shift+ Alt+F</li>
-                    <li>Sur Mac Shift+ Option+F</li>
-                    <li>Sur Linux Ctrl+ Shift+I</li>
+                    <li>
+                        <a href="https://jaetheme.com/balises-html5/#code" target="_blank"
+                            rel="noopener noreferrer">Retrouvez ici
+                            l'enssemble des balises HTML à votre
+                            disposition</a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"
+                            rel="noopener noreferrer">Besoin de resource pour la CSS Flexbox, c'est par ici que cela ce
+                            passe.</a>
+                    </li>
+                    <li>
+                        <a href="https://flexboxfroggy.com/#fr" target="_blank"
+                            rel="noopener noreferrer">Apprenez Flexbox de maniere ludique avec ce mini jeu.</a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank"
+                            rel="noopener noreferrer">Retour sur les média querry, pour ne plus avoir de probleme de responsive.</a>
+                    </li>
                 </ul>
-            </details>
-        </div>
-        <div id="url">
-            <h3>Retrouvez ici une selection de lien qui vous aidera dans votre formation</h3>
-            <ul>
-                <li>
-                    <a href="https://jaetheme.com/balises-html5/#code" target="_blank"
-                        rel="noopener noreferrer">Retrouvez ici
-                        l'enssemble des balises HTML à votre
-                        disposition</a>
-                </li>
-                <li>
-                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"
-                        rel="noopener noreferrer">Besoin de resource pour la CSS Flexbox, c'est par ici que cela ce
-                        passe.</a>
-                </li>
-                <li>
-                    <a href="https://flexboxfroggy.com/#fr" target="_blank"
-                        rel="noopener noreferrer">Apprenez Flexbox de maniere ludique avec ce mini jeu.</a>
-                </li>
-                <li>
-                    <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank"
-                        rel="noopener noreferrer">Retour sur les média querry, pour ne plus avoir de probleme de responsive.</a>
-                </li>
-            </ul>
-        </div>
+            </div>
+        </secltion>
         <div id="about">
             <h3>Le mot du dev</h3>
             <p>Développeur, mais aussi mentor chez OpenClassrooms, coach WordPress et bien plus encore, j'essaie de vous soutenir au mieux dans votre apprentissage de la programmation web.</p>
@@ -166,6 +192,7 @@
             <a href="https://www.instagram.com/scapinjonathan/" target="_blank" rel="noopener noreferrer"><img src="img/icon/instagram_icon.png" alt="" srcset=""></a>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
